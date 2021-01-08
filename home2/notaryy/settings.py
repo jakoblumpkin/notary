@@ -24,9 +24,9 @@ PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
 SECRET_KEY = '5nz1rvj)elrja8jsf3fr5!igqy&(2b*nq+#j!)8rr0k(t=u7lw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['houstonnotary.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['houstonnotary.herokuapp.com', '127.0.0.1', '*']
 
 
 # Application definition
