@@ -703,6 +703,7 @@ p {
 
 .fontSize {
 font-size: 14px;
+word-wrap: break-word;
 }
 
 .fontSizeC {
@@ -715,3 +716,34 @@ word-wrap: break-word;
 border-right:solid;
 width:30%;
 }
+
+@media only screen and (max-width: 425px) {
+  #columnB {
+   border-bottom:solid;
+  }
+  #whatDo {
+  width:145%;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  #whatDo {
+  width:160%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  #loan {
+       position:absolute;
+       top: 400px;
+  }
+  #list{
+  height: 5px;
+  }
+  #email{
+  font-size:15px;
+  }
+}
+
