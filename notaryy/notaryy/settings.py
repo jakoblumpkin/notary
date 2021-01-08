@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '5nz1rvj)elrja8jsf3fr5!igqy&(2b*nq+#j!)8rr0k(t=u7lw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['houstonnotary.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['houstonnotary.herokuapp.com', '127.0.0.1', '*']
 
 
 # Application definition
@@ -126,8 +126,6 @@ STATIC_ROOT= os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR, 'static'),
 ]
-
-
 
 EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
