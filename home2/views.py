@@ -20,8 +20,8 @@ def sendmail(request):
     if request.method=='POST':
        send_mail('Notary Website Message ',
                  'Message: '+message+'\nName: '+name+'\nEmail: '+email+'\nDocument: '+document,
-                 settings.EMAIL_HOST_USER,
-                 ['charlottelumpkin@yahoo.com'],
+                 'Lumpkinjakobr@gmail.com',
+                 ['charlottelumpkin@yahoo.com', 'Lumpkinjakobr@gmail.com'],
                  fail_silently=False)
     return redirect('/')
 
